@@ -8,6 +8,9 @@
 # - The list should contain any three elements of your choice.
 # - Use a loop to print each element.
 
+from cmath import e
+
+
 def example_list_function():
   example_list = ['element1', 'element2', 'element3']
   for element in example_list:
@@ -29,10 +32,30 @@ def manage_students():
     students = ['Nick', 'Alicia', 'Madison']
 
     first_student = students[1]
-    second_student = students[2]
+    second_student = students[-1]
 
     # print(first_student)
     # print(second_student)
+    return first_student, second_student
 
 # Call the function and print the result
 print('Exercise 1:', manage_students())
+
+# Exercise 2: Loop and String Concatenation
+#
+# Create a tuple named foods containing the same number of foods (strings) as there are names in the students list.
+# Create a variable named meal and assign an empty string to it.
+# Use a for loop to iterate over the strings in foods and append each string to meal.
+
+def combine_foods():
+    # your code here
+    foods = ('Salisbury Steak', 'Fried Chicken', 'Chocolate Pudding')
+    meal = ""
+
+    for food in foods:
+        meal += food
+    return meal
+    
+# Call the function and print the result
+
+print('Exercise 2:', combine_foods())
